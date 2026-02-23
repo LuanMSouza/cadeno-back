@@ -1,0 +1,265 @@
+[
+    {
+        "id": 1,
+        "nome": "Cervejas lata",
+        "imagem": "https://carrefourbrfood.vtexassets.com/arquivos/ids/107629977/cerveja-skol-pilsen-lata-350ml-1.jpg?v=638155200023370000",
+        "produtos": [
+            {
+                "nome": "Heineken",
+                "preco": 6,
+                "imagem": "https://cdn.sistemawbuy.com.br/arquivos/f0d0016a15326921262a484eb0cb1b24/produtos/665e14fe9fb66/20240603160951-665e14ffadfb8.jpg"
+            },
+            {
+                "nome": "Heineken Zero",
+                "preco": 6,
+                "imagem": "https://redemix.vteximg.com.br/arquivos/ids/208317-1000-1000/7896045506910.jpg?v=638350600384630000"
+            },
+            {
+                "nome": "Brahma Chopp",
+                "preco": 4,
+                "imagem": "https://choppbrahmaexpress.vtexassets.com/arquivos/ids/155702/brahma-lata-350ml.jpg?v=637353454674430000"
+            },
+            {
+                "nome": "Brahma Duplo",
+                "preco": 5,
+                "imagem": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/88333-cerveja-brahma-duplo-malte-lata-350ml.jpg"
+            },
+            {
+                "nome": "Brahma Zero",
+                "preco": 5,
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPoat6qvPmC3_ipVgY980qXt9sjbla0J9LAA&s"
+            },
+            {
+                "nome": "Brahma Malzbier",
+                "preco": 6,
+                "imagem": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/176-cerveja-brahma-malzbier-lata-350ml.20220906162307.jpg"
+            },
+            {
+                "nome": "Petra Origem",
+                "preco": 4,
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcFd_Y2peQ5yJcuyz_NZ4aNe2fUhbeBMqXvg&s"
+            },
+            {
+                "nome": "Petra Escura",
+                "preco": 6,
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPkeG-q3VIVw2j_p_1wVplVuwWXeCEqpfZrQ&s"
+            },
+            {
+                "nome": "Caracu",
+                "preco": 6,
+                "imagem": "https://choppbrahmaexpress.vtexassets.com/arquivos/ids/158500/603aaa711f6cb2f77ba05273270314ee.jpg?v=638871531196470000"
+            },
+            {
+                "nome": "Original",
+                "preco": 5,
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhyOPTuciHzTOX9QL8APK72ZRm_qkvXe21g&s"
+            },
+            {
+                "nome": "Bohemia",
+                "preco": 5,
+                "imagem": "https://choppbrahmaexpress.vtexassets.com/arquivos/ids/157233/Bohemia-lata-310ml-uni-1.jpg?v=637862418286200000"
+            },
+            {
+                "nome": "Skol",
+                "preco": 4,
+                "imagem": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/132-cerveja-skol-pilsen-lata-350ml.jpg"
+            },
+            {
+                "nome": "Itaipava",
+                "preco": 3,
+                "imagem": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/183-cerveja-itaipava-pilsen-lata-350ml.20250131122342.jpg"
+            },
+            {
+                "nome": "Budweiser",
+                "preco": 5,
+                "imagem": "https://carrefourbrfood.vtexassets.com/arquivos/ids/134559174/cerveja-budweiser-american-lager-350ml-lata-1.jpg?v=638364458133000000"
+            },
+            {
+                "nome": "Stella Artois",
+                "preco": 6,
+                "imagem": "https://carrefourbrfood.vtexassets.com/arquivos/ids/134558706/cerveja-stella-artois-puro-malte-350ml-lata-1.jpg?v=638364443074530000"
+            },
+            {
+                "nome": "Stella Pure Gold",
+                "preco": 6,
+                "imagem": "https://prezunic.vtexassets.com/arquivos/ids/209750/6675e17f48058909907e6bf6.jpg?v=638545982745330000"
+            },
+            {
+                "nome": "Eisenbahn",
+                "preco": 5,
+                "imagem": "https://carrefourbrfood.vtexassets.com/arquivos/ids/192242570/cerveja-eisenbahn-pilsen-lata-350ml-1.jpg?v=638830137144630000"
+            },
+            {
+                "nome": "Império",
+                "preco": 4,
+                "imagem": "https://boa.vtexassets.com/arquivos/ids/532840/Cerveja-Imperio-Pilsen-Puro-Malte-350ml-Lata.jpg?v=638478429026400000"
+            },
+            {
+                "nome": "Michelob",
+                "preco": 6,
+                "imagem": "https://ibassets.com.br/ib.item.image.large/l-ce85dfc64bb6434cb6b160b3fb3531c4.jpeg"
+            },
+            {
+                "nome": "Itaipava Malzebier",
+                "preco": 6,
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3R2-S65HA-luOSDAFfzPu3SMyu8NsjCM64g&s"
+            },
+            {
+                "nome": "Amstel",
+                "preco": 4,
+                "imagem": "https://io.convertiez.com.br/m/trimais/shop/products/images/5223/medium/cerveja-amstel-269ml-lt_5160.jpeg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nome": "Cervejas long",
+        "imagem": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/222-cerveja-heineken-long-neck-330ml.jpg",
+        "produtos": [
+            {
+                "nome": "Corona",
+                "preco": 8,
+                "imagem": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/305-cerveja-corona-long-neck-330ml.jpg"
+            },
+            {
+                "nome": "Corona Zero",
+                "preco": 8,
+                "imagem": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/19317-cerveja-corona-cero-sunbrew-ln-330ml.20240325131009.jpg"
+            },
+            {
+                "nome": "Heineken",
+                "preco": 7,
+                "imagem": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/222-cerveja-heineken-long-neck-330ml.jpg"
+            },
+            {
+                "nome": "Heineken Zero",
+                "preco": 7,
+                "imagem": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/87462-cerveja-heineken-0-0-alcool-long-neck-330ml.20250320111104.jpg"
+            },
+            {
+                "nome": "Budweiser",
+                "preco": 7,
+                "imagem": "https://www.imigrantesbebidas.com.br/img/bebida/images/products/full/71062-cerveja-budweiser-long-neck-330ml.20230214153909.jpg?s=f3a0e20def39aa88f8575c9a5ef256e7"
+            },
+            {
+                "nome": "Stella Artois",
+                "preco": 7,
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy1Rursb0X_muTfUdWvEyEcS-JH-ESQrFfDw&s"
+            },
+            {
+                "nome": "Stella Pure Gold",
+                "preco": 8,
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI1T_lNt0OqQ4FN2_NA9RWq4SRT5STgvo13Q&s"
+            },
+            {
+                "nome": "Eisenbahn IPA",
+                "preco": 7,
+                "imagem": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/88325-cerveja-eisenbahn-american-ipa-puro-malte-355ml.jpg"
+            },
+            {
+                "nome": "Beats",
+                "preco": 9,
+                "imagem": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/89222-skol-beats-senses-long-neck-269ml.jpg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "nome": "Refrigerantes",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFcBHK05nRDRG8K9mthdGrVnKL0-3-PJHORA&s",
+        "produtos": [
+            {
+                "nome": "Lata",
+                "preco": 4,
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFcBHK05nRDRG8K9mthdGrVnKL0-3-PJHORA&s"
+            },
+            {
+                "nome": "600ml",
+                "preco": 6,
+                "imagem": "https://carrefourbrfood.vtexassets.com/arquivos/ids/18900724/coca-cola-600ml-1.jpg?v=637590176325700000"
+            },
+            {
+                "nome": "Coca 2L",
+                "preco": 11,
+                "imagem": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/1884-refrigerante-coca-cola-2l.jpg"
+            },
+            {
+                "nome": "Ambev 2L",
+                "preco": 10,
+                "imagem": "https://comercialqueiroz.agilecdn.com.br/056817.jpg?v=313-2649002665"
+            },
+            {
+                "nome": "H2O 1,5L",
+                "preco": 10,
+                "imagem": "https://carrefourbrfood.vtexassets.com/arquivos/ids/107630155/refrigerante-h2oh-limao-garrafa-15l-1.jpg?v=638155205832800000"
+            },
+            {
+                "nome": "H2O 500ml",
+                "preco": 6,
+                "imagem": "https://images.tcdn.com.br/img/img_prod/858764/refrigerante_h2oh_limao_500ml_c_12_397_1_20201021165654.jpg"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "nome": "Outros",
+        "imagem": "https://callfarma.com.br/_next/image?url=https%3A%2F%2Fd2lakedouw4zad.cloudfront.net%2Fenergetico-monster-pacific-punch-473ml-51266.png&w=640&q=75",
+        "produtos": [
+            {
+                "nome": "Del Valle lata",
+                "preco": 5,
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTllEo-y8-Tu6FV70ytGsn9ULnEqns7AG4yUg&s"
+            },
+            {
+                "nome": "Red bull",
+                "preco": 10,
+                "imagem": "https://www.piramidesdistribuidora.com.br/images/original/14133-red-bull-lata-250ml-4pack-regular-4un.20251024104230.png"
+            },
+            {
+                "nome": "Monster",
+                "preco": 10,
+                "imagem": "https://callofduty.monsterenergy.com/img/cans/br/cans-group.webp"
+            },
+            {
+                "nome": "Gatorade",
+                "preco": 6,
+                "imagem": "https://prezunic.vtexassets.com/arquivos/ids/187455/656790741ef3739680762fe8.jpg?v=638368828084600000"
+            },
+            {
+                "nome": "Lipton",
+                "preco": 9,
+                "imagem": "https://carrefourbrfood.vtexassets.com/arquivos/ids/107629949/cha-lipton-ice-tea-pessego-garrafa-15l-1.jpg?v=638155199922430000"
+            },
+            {
+                "nome": "Jacobinho 1.4L",
+                "preco": 25,
+                "imagem": "https://phygital-files.mercafacil.com/catalogo/uploads/produto/suco_de_laranja_integral_jacobinho_1700ml_99e9cd7d-38c8-40a3-9787-5d3e5f67e4d3.jpg"
+            },
+            {
+                "nome": "Jacobinho 300ml",
+                "preco": 6.5,
+                "imagem": "https://jacobscitrus.com.br/images/jacobinho-laranja-300ml.png"
+            },
+            {
+                "nome": "Pomaris 1.4L",
+                "preco": 24,
+                "imagem": "https://www.pomardelivery.com.br/imagens/produtos/view/13327.jpg"
+            },
+            {
+                "nome": "Carvão 2.5kg",
+                "preco": 16,
+                "imagem": "https://acdn-us.mitiendanube.com/stores/004/740/703/products/carvao-b7783c26655b63b0f217315340631358-1024-1024.webp"
+            },
+            {
+                "nome": "Carvão 5kg",
+                "preco": 30,
+                "imagem": "https://acdn-us.mitiendanube.com/stores/004/740/703/products/carvao-b7783c26655b63b0f217315340631358-1024-1024.webp"
+            },
+            {
+                "nome": "Carvão 10Kg",
+                "preco": 59,
+                "imagem": "https://acdn-us.mitiendanube.com/stores/004/740/703/products/carvao-b7783c26655b63b0f217315340631358-1024-1024.webp"
+            }
+        ]
+    }
+]
