@@ -163,7 +163,7 @@ router.post('/registrar-pagamento/:id', async (req, res) => {
             }
         }
 
-        client.query('INSERT INTO pagamentos (id_cliente, valor, data) VALUES ($1, $2, NOW())', [id, valor]);
+        client.query('INSERT INTO pagamentos (cliente_id, valor, data) VALUES ($1, $2, NOW())', [id, valor]);
 
         await client.query('COMMIT');
 
