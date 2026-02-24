@@ -6,7 +6,7 @@ router.get('/:id', async (req, res) => {
     try {
         // Buscar pedidos com saldo devedor
         const pedidos = await pool.query(
-            'SELECT * FROM pedidos WHERE valor_total > ja_abatido AND id_cliente=$1 ORDER BY data',
+            'SELECT * FROM pedidos WHERE id_cliente= $1 ORDER BY id DESC LIMIT 50',
             [req.params.id]
         );
 
@@ -31,7 +31,6 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-
 router.post('/novo', async (req, res) => {
     const { cliente, itens } = req.body;
 
@@ -40,22 +39,30 @@ router.post('/novo', async (req, res) => {
     try {
         await client.query('BEGIN');
 
-        // 1️⃣ Verificar ou criar cliente
+        // 1️⃣ Verificar ou criar cliente (Ignorando Maiúsculas/Minúsculas)
         let clienteId;
-        const clienteExistente = await client.query('SELECT id FROM clientes WHERE nome = $1', [cliente]);
+        // Usamos ILIKE ou LOWER para comparar sem distinção
+        const clienteExistente = await client.query(
+            'SELECT id FROM clientes WHERE LOWER(nome) = LOWER($1)',
+            [cliente]
+        );
 
         if (clienteExistente.rows.length === 0) {
+            // Se for criar um novo, salve com a primeira letra maiúscula (Opcional, mas fica bonito)
+            const nomeFormatado = cliente.charAt(0).toUpperCase() + cliente.slice(1).toLowerCase();
+
             const insertCliente = await client.query(
                 'INSERT INTO clientes (nome) VALUES ($1) RETURNING id',
-                [cliente]
+                [nomeFormatado]
             );
             clienteId = insertCliente.rows[0].id;
         } else {
             clienteId = clienteExistente.rows[0].id;
         }
 
-        // 2️⃣ Criar pedido
-        const valorTotal = itens.reduce((total, item) => total + item.valor * item.quantidade, 0);
+        // 2️⃣ Criar pedido - agora calculando corretamente
+        // Usamos item.preco (que é o unitário que vem do front)
+        const valorTotal = itens.reduce((total, item) => total + (item.preco * item.quantidade), 0);
 
         const insertPedido = await client.query(
             'INSERT INTO pedidos (id_cliente, valor_total, data) VALUES ($1, $2, NOW()) RETURNING id',
@@ -68,7 +75,12 @@ router.post('/novo', async (req, res) => {
         for (const item of itens) {
             await client.query(
                 'INSERT INTO pedidos_itens (id_pedido, produto, quantidade, valor_unt) VALUES ($1, $2, $3, $4)',
-                [pedidoId, item.nome, item.quantidade, item.valor]
+                [
+                    pedidoId,
+                    item.nome,
+                    item.quantidade,
+                    item.preco // <--- Aqui você salva o valor de UMA unidade
+                ]
             );
         }
 
