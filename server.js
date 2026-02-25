@@ -10,6 +10,7 @@ app.use(express.json())
 
 app.use('/clientes', require('./rotas/clientes'))
 app.use('/pedidos', require('./rotas/pedidos'))
+app.use('/login', require('./rotas/login'))
 
 app.get('/catalogo', (req, res) => {
     const data = fs.readFileSync('./produtos.json', 'utf-8');
