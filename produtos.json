@@ -248,7 +248,7 @@
             {
                 "nome": "Agua 1,5L",
                 "preco": 15,
-                "imagem": "https://www.svicente.com.br/on/demandware.static/-/Sites-storefront-catalog-sv/default/dw88026893/Produtos/669067-7896045506316-cerveja%20amstel%20puro%20malte%20lata%20269ml%20c%2012%20unid.-amstel-1.jpg"
+                "imagem": "https://a-static.mlcdn.com.br/%7Bw%7Dx%7Bh%7D/agua-mineral-sem-gas-levissima-15litros-fardo-6unidades/depositodeaguamoraes/d2f12de4812011ef9eaf4201ac18501b/4dc37b8670a6b82416afa3ccc166d714.jpeg"
             }
         ]
     },
@@ -316,6 +316,11 @@
                 "nome": "Pomaris 1.4L",
                 "preco": 24,
                 "imagem": "https://www.pomardelivery.com.br/imagens/produtos/view/13327.jpg"
+            },
+            {
+                "nome": "Pergola 1L",
+                "preco": 25,
+                "imagem": "https://www.vinicolacampestre.com.br/wp-content/uploads/2019/02/Produtos-Site-4.png"
             },
             {
                 "nome": "Carvão 2.5kg",
