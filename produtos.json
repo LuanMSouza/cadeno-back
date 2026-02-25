@@ -216,6 +216,26 @@
         "imagem": "https://callfarma.com.br/_next/image?url=https%3A%2F%2Fd2lakedouw4zad.cloudfront.net%2Fenergetico-monster-pacific-punch-473ml-51266.png&w=640&q=75",
         "produtos": [
             {
+                "nome": "Agua 500ml",
+                "preco": 5,
+                "imagem": "https://destro.fbitsstatic.net/img/p/agua-levissima-mineral-sem-gas-510ml-87879/274876.jpg?w=500&h=500&v=202501231555&qs=ignore"
+            },
+            {
+                "nome": "Agua gás 500ml",
+                "preco": 5,
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBXxE2nl-ceWooDOSOuIL1ctqOBdNX9UQhw&s"
+            },
+            {
+                "nome": "Agua 1,5L",
+                "preco": 5,
+                "imagem": "https://destro.fbitsstatic.net/img/p/agua-levissima-mineral-sem-gas-1-5l-87878/274875.jpg?w=500&h=500&v=202501231555&qs=ignore"
+            },
+            {
+                "nome": "Del valle 1L",
+                "preco": 5,
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdu74IYBkWr9d3JviJoAt4_zGJoXwb-8wxPA&s"
+            },
+            {
                 "nome": "Del Valle lata",
                 "preco": 5,
                 "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTllEo-y8-Tu6FV70ytGsn9ULnEqns7AG4yUg&s"
