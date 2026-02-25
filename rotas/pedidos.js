@@ -37,6 +37,7 @@ router.get('/:id', async (req, res) => {
 
 router.post('/novo', async (req, res) => {
     const { cliente, itens } = req.body;
+    const usuario = req.usuario.nome; // Pegamos o usuário do token, caso queira usar para algo (ex: log, permissões, etc)
 
     const client = await pool.connect();
 
@@ -56,8 +57,8 @@ router.post('/novo', async (req, res) => {
             const nomeFormatado = cliente.charAt(0).toUpperCase() + cliente.slice(1).toLowerCase();
 
             const insertCliente = await client.query(
-                'INSERT INTO clientes (nome) VALUES ($1) RETURNING id',
-                [nomeFormatado]
+                'INSERT INTO clientes (nome, criado_por) VALUES ($1, $2) RETURNING id',
+                [nomeFormatado, usuario]
             );
             clienteId = insertCliente.rows[0].id;
         } else {
@@ -69,8 +70,8 @@ router.post('/novo', async (req, res) => {
         const valorTotal = itens.reduce((total, item) => total + (item.preco * item.quantidade), 0);
 
         const insertPedido = await client.query(
-            'INSERT INTO pedidos (id_cliente, valor_total, data) VALUES ($1, $2, NOW()) RETURNING id',
-            [clienteId, valorTotal]
+            'INSERT INTO pedidos (id_cliente, valor_total, data, criado_por) VALUES ($1, $2, NOW(), $3) RETURNING id',
+            [clienteId, valorTotal, usuario]
         );
 
         const pedidoId = insertPedido.rows[0].id;
@@ -103,6 +104,7 @@ router.post('/novo', async (req, res) => {
 router.post('/registrar-pagamento/:id', async (req, res) => {
     const { id } = req.params;
     let { valor } = req.body;
+    const usuario = req.usuario.nome; // Pegamos o usuário do token, caso queira usar para algo (ex: log, permissões, etc)
 
     // Blinda: Converta para número e valide
     valor = parseFloat(valor);
@@ -179,7 +181,7 @@ router.post('/registrar-pagamento/:id', async (req, res) => {
             }
         }
 
-        client.query('INSERT INTO pagamentos (cliente_id, valor, data) VALUES ($1, $2, NOW())', [id, valor]);
+        client.query('INSERT INTO pagamentos (cliente_id, valor, data, criado_por) VALUES ($1, $2, NOW(), $3)', [id, valor, usuario]);
 
         await client.query('COMMIT');
 
