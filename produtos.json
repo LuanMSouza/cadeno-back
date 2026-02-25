@@ -108,6 +108,11 @@
                 "nome": "Amstel",
                 "preco": 4,
                 "imagem": "https://io.convertiez.com.br/m/trimais/shop/products/images/5223/medium/cerveja-amstel-269ml-lt_5160.jpeg"
+            },
+            {
+                "nome": "Spaten",
+                "preco": 6,
+                "imagem": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/89924-cerveja-spaten-lata-269ml.20221215175000.jpg"
             }
         ]
     },
@@ -168,6 +173,11 @@
         "nome": "Refrigerantes",
         "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFcBHK05nRDRG8K9mthdGrVnKL0-3-PJHORA&s",
         "produtos": [
+            {
+                "nome": "Pet 200ml",
+                "preco": 2,
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb58mt5ZI-OrYfEjqRRklOGgWgW3gXEGaSFQ&s"
+            },
             {
                 "nome": "Lata",
                 "preco": 4,
