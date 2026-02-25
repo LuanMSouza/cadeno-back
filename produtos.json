@@ -244,6 +244,11 @@
                 "nome": "Amstel",
                 "preco": 38.28,
                 "imagem": "https://www.svicente.com.br/on/demandware.static/-/Sites-storefront-catalog-sv/default/dw88026893/Produtos/669067-7896045506316-cerveja%20amstel%20puro%20malte%20lata%20269ml%20c%2012%20unid.-amstel-1.jpg"
+            },
+            {
+                "nome": "Agua 1,5L",
+                "preco": 15,
+                "imagem": "https://www.svicente.com.br/on/demandware.static/-/Sites-storefront-catalog-sv/default/dw88026893/Produtos/669067-7896045506316-cerveja%20amstel%20puro%20malte%20lata%20269ml%20c%2012%20unid.-amstel-1.jpg"
             }
         ]
     },
@@ -254,22 +259,22 @@
         "produtos": [
             {
                 "nome": "Agua 500ml",
-                "preco": 5,
+                "preco": 2,
                 "imagem": "https://destro.fbitsstatic.net/img/p/agua-levissima-mineral-sem-gas-510ml-87879/274876.jpg?w=500&h=500&v=202501231555&qs=ignore"
             },
             {
                 "nome": "Agua gás 500ml",
-                "preco": 5,
+                "preco": 3,
                 "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBXxE2nl-ceWooDOSOuIL1ctqOBdNX9UQhw&s"
             },
             {
                 "nome": "Agua 1,5L",
-                "preco": 5,
+                "preco": 3,
                 "imagem": "https://destro.fbitsstatic.net/img/p/agua-levissima-mineral-sem-gas-1-5l-87878/274875.jpg?w=500&h=500&v=202501231555&qs=ignore"
             },
             {
                 "nome": "Del valle 1L",
-                "preco": 5,
+                "preco": 8.99,
                 "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdu74IYBkWr9d3JviJoAt4_zGJoXwb-8wxPA&s"
             },
             {
