@@ -2,6 +2,10 @@ const pool = require('../db')
 
 const router = require('express').Router()
 
+const { verificarToken } = require('./auth')
+
+router.use(verificarToken)
+
 router.get('/todos', async (req, res) => {
     const clientes = await pool.query('SELECT * FROM clientes')
 

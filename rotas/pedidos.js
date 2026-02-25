@@ -2,6 +2,10 @@ const router = require('express').Router()
 
 const pool = require('../db')
 
+const { verificarToken } = require('./auth')
+
+router.use(verificarToken)
+
 router.get('/:id', async (req, res) => {
     try {
         // Buscar pedidos com saldo devedor
