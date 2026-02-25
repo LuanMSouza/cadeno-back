@@ -6,34 +6,7 @@ const { verificarToken } = require('./auth')
 
 router.use(verificarToken)
 
-router.get('/:id', async (req, res) => {
-    try {
-        // Buscar pedidos com saldo devedor
-        const pedidos = await pool.query(
-            'SELECT * FROM pedidos WHERE id_cliente= $1 ORDER BY id DESC LIMIT 50',
-            [req.params.id]
-        );
 
-        // Para cada pedido, buscar seus itens
-        const pedidosComItens = await Promise.all(
-            pedidos.rows.map(async (pedido) => {
-                const itens = await pool.query(
-                    'SELECT * FROM pedidos_itens WHERE id_pedido = $1',
-                    [pedido.id]
-                );
-                return {
-                    ...pedido,
-                    itens: itens.rows
-                };
-            })
-        );
-
-        res.status(200).json(pedidosComItens);
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ error: 'Erro ao buscar pedidos' });
-    }
-});
 
 router.post('/novo', async (req, res) => {
     const { cliente, itens } = req.body;
@@ -203,5 +176,50 @@ router.post('/registrar-pagamento/:id', async (req, res) => {
     }
 });
 
+router.get('/pagamentos', async (req, res) => {
+    try {
+        const pagamentos = await pool.query(
+            `SELECT p.id, c.nome AS cliente, p.valor, p.data, p.criado_por
+                FROM pagamentos p
+                JOIN clientes c ON p.cliente_id = c.id
+                ORDER BY p.data DESC
+                LIMIT 50`
+        );
+        res.status(200).json(pagamentos.rows);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Erro ao buscar pagamentos' });
+    }
+});
 
-module.exports = router
+router.get('/:id', async (req, res) => {
+    try {
+        // Buscar pedidos com saldo devedor
+        const pedidos = await pool.query(
+            'SELECT * FROM pedidos WHERE id_cliente= $1 ORDER BY id DESC LIMIT 50',
+            [req.params.id]
+        );
+
+        // Para cada pedido, buscar seus itens
+        const pedidosComItens = await Promise.all(
+            pedidos.rows.map(async (pedido) => {
+                const itens = await pool.query(
+                    'SELECT * FROM pedidos_itens WHERE id_pedido = $1',
+                    [pedido.id]
+                );
+                return {
+                    ...pedido,
+                    itens: itens.rows
+                };
+            })
+        );
+
+        res.status(200).json(pedidosComItens);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Erro ao buscar pedidos' });
+    }
+});
+
+
+module.exports = router 
