@@ -212,6 +212,43 @@
     },
     {
         "id": 4,
+        "nome": "Caixas s/gelo",
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFcBHK05nRDRG8K9mthdGrVnKL0-3-PJHORA&s",
+        "produtos": [
+            {
+                "nome": "Itapava",
+                "preco": 31.92,
+                "imagem": "https://www.arenaatacado.com.br/on/demandware.static/-/Sites-storefront-catalog-sv/default/dwc535efe9/Produtos/675598-7897395020132-cerveja%20itaipava%20lata%20350ml%20c%2012%20unid.%20-itaipava-1.jpg"
+            },
+            {
+                "nome": "Skol c/18",
+                "preco": 59.22,
+                "imagem": "https://coopsp.vtexassets.com/arquivos/ids/232265/Novo-Projeto---2023-03-30T175058.391.jpg?v=638158063016870000"
+            },
+            {
+                "nome": "Skol c/12",
+                "preco": 39.48,
+                "imagem": "https://io.convertiez.com.br/m/superpaguemenos/shop/products/images/68992/medium/cerveja-skol-pilsen-350ml-com-12-unidades_121038.jpg"
+            },
+            {
+                "nome": "Heineken lata",
+                "preco": 59.88,
+                "imagem": "https://cdn.shopify.com/s/files/1/0579/9742/6861/files/7896045506880_0.jpg?v=1752001240&width=480"
+            },
+            {
+                "nome": "Heineken long c/6",
+                "preco": 35.94,
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeMEPWmW8RLEdVq3p_UgHWCRBbMonHVYTYGA&s"
+            },
+            {
+                "nome": "Amstel",
+                "preco": 38.28,
+                "imagem": "https://www.svicente.com.br/on/demandware.static/-/Sites-storefront-catalog-sv/default/dw88026893/Produtos/669067-7896045506316-cerveja%20amstel%20puro%20malte%20lata%20269ml%20c%2012%20unid.-amstel-1.jpg"
+            }
+        ]
+    },
+    {
+        "id": 5,
         "nome": "Outros",
         "imagem": "https://callfarma.com.br/_next/image?url=https%3A%2F%2Fd2lakedouw4zad.cloudfront.net%2Fenergetico-monster-pacific-punch-473ml-51266.png&w=640&q=75",
         "produtos": [
